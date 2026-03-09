@@ -1,5 +1,5 @@
 /* 
-  Style for Sri Muthukumar Interior Decorators
+  Style for Sri Muthumari Interior Decorators
   Color Palette:
   Primary Dark Green: #0A3622
   Secondary Green: #1A4331
@@ -1227,6 +1227,10 @@ h5 {
         display: block;
     }
 
+    .hero-content {
+        padding-top: 60px;
+    }
+
     .hero-title {
         font-size: 2.2rem;
     }
@@ -1237,7 +1241,14 @@ h5 {
 
     .hero-buttons {
         flex-direction: column;
-        width: fit-content;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 
     .about-features {
@@ -1254,7 +1265,11 @@ h5 {
 
     .indicator-card {
         flex: 1 1 45%;
-        padding: 8px 10px;
+        padding: 12px 10px;
+    }
+
+    .indicator-card:first-child {
+        flex: 1 1 100%;
     }
 
     .indicator-card h3 {
@@ -1262,33 +1277,55 @@ h5 {
     }
 
     .indicator-card p {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
 }
 
 @media (max-width: 480px) {
+    .hero {
+        min-height: 650px;
+    }
+
     .hero-title {
         font-size: 1.8rem;
+        margin-bottom: 15px;
     }
 
     .section-title {
         font-size: 2rem;
     }
 
+    .hero-indicators {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
     .indicator-card {
-        flex: 1 1 100%;
+        flex: 1 1 calc(33.333% - 8px);
         text-align: center;
         align-items: center;
+        padding: 10px 5px;
+        min-width: 0;
     }
 
-    .hero-buttons {
-        width: 100%;
+    .indicator-card:first-child {
+        flex: 1 1 100%;
+        padding: 12px 10px;
     }
 
-    .hero-buttons .btn {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
+    .indicator-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .indicator-card p {
+        font-size: 0.7rem;
+        word-wrap: break-word;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+        line-height: 1.4;
     }
 
     .comparison-slider {

@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             const message = document.getElementById('message').value;
 
             const whatsappNumber = "917373716767";
-            const text = `Hello Sr. Muthukumar Interiors,%0A%0AI would like to discuss a project.%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Requirements:* ${message}`;
+            const text = `Hello Sri Muthumari Interiors,%0A%0AI would like to discuss a project.%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Requirements:* ${message}`;
 
             const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
             window.open(whatsappUrl, '_blank');

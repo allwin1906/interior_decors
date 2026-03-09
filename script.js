@@ -71,28 +71,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form Submission handling (placeholder)
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    const btn = this.querySelector('button');
-    const originalText = btn.innerText;
+        const btn = this.querySelector('button');
+        const originalText = btn.innerText;
 
-    btn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Sending...';
-    btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Sending...';
+        btn.disabled = true;
 
-    // Simulate API call
-    setTimeout(() => {
-        btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-        btn.classList.add('btn-success');
-        this.reset();
-
+        // Simulate API call
         setTimeout(() => {
-            btn.innerHTML = originalText;
-            btn.classList.remove('btn-success');
-            btn.disabled = false;
-        }, 3000);
-    }, 1500);
-});
+            btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+            btn.classList.add('btn-success');
+            this.reset();
+
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.classList.remove('btn-success');
+                btn.disabled = false;
+            }, 3000);
+        }, 1500);
+    });
+}
 
 // GSAP Animations with ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
@@ -532,19 +535,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Standalone lightbox opener for mixed masonry grid
-window.openStandaloneLightbox = function(src, caption) {
+window.openStandaloneLightbox = function (src, caption) {
     currentGallery = [{ src: src, caption: caption }];
     currentIndex = 0;
     const lightboxImg = document.getElementById('lightbox-img');
     const lightboxCaption = document.getElementById('lightbox-caption');
     const lightbox = document.getElementById('lightbox');
-    
+
     if (lightboxImg && lightboxCaption && lightbox) {
         lightboxImg.src = src;
         lightboxCaption.textContent = caption;
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
-        
+
         const lightboxPrev = document.querySelector('.lightbox-prev');
         const lightboxNext = document.querySelector('.lightbox-next');
         if (lightboxPrev) lightboxPrev.style.display = 'none';

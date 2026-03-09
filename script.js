@@ -445,3 +445,110 @@ if (cursorDot && cursorOutline) {
         });
     });
 }
+
+
+// MULTI-PAGE SPECIFIC LOGIC
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. SERVICES PAGE PREVIEWS
+    const serviceContainers = document.querySelectorAll('.mini-gallery-container');
+    if (serviceContainers.length > 0 && typeof servicePortfolios !== 'undefined') {
+        serviceContainers.forEach(container => {
+            const slug = container.id.replace('preview-', '');
+            if (servicePortfolios[slug] && servicePortfolios[slug].length > 0) {
+                // Get exactly 4 items for preview
+                const previewImages = servicePortfolios[slug].slice(0, 4);
+                let html = '';
+                previewImages.forEach((imgSrc, index) => {
+                    html += `<img src="${imgSrc}" alt="${slug} ${index}" onclick="openServiceGallery('${slug}')" loading="lazy">`;
+                });
+                container.innerHTML = html;
+            }
+        });
+    }
+
+    // 2. GALLERY PAGE MASONRY
+    const masonryContainer = document.getElementById('masonry-gallery');
+    if (masonryContainer && typeof servicePortfolios !== 'undefined') {
+        const categories = {
+            'kitchen': ['modular-kitchen'],
+            'wardrobes': ['wardrobes'],
+            'ceiling': ['false-ceiling'],
+            'partitions': ['aluminium-partition'],
+            'exterior': ['elevation-ms', 'pvc-upvc', 'wooden-handrails']
+        };
+
+        // Combine all images
+        const allImages = [];
+        for (const [slug, imgs] of Object.entries(servicePortfolios)) {
+            let cat = 'all';
+            for (const [key, slugs] of Object.entries(categories)) {
+                if (slugs.includes(slug)) {
+                    cat = key;
+                    break;
+                }
+            }
+
+            imgs.forEach(img => {
+                allImages.push({
+                    src: img,
+                    category: cat,
+                    slug: slug,
+                    caption: formatServiceName(slug) + ' Design'
+                });
+            });
+        }
+
+        // Shuffle arrays for a mixed grid
+        allImages.sort(() => Math.random() - 0.5);
+
+        const renderGallery = (filter) => {
+            const filtered = filter === 'all' ? allImages : allImages.filter(img => img.category === filter);
+            let html = '';
+            filtered.forEach((img, idx) => {
+                html += `
+                    <div class="masonry-item" data-category="${img.category}" onclick="openStandaloneLightbox('${img.src}', '${img.caption}')">
+                        <img src="${img.src}" loading="lazy" alt="${img.caption}">
+                        <div class="masonry-overlay">
+                            <h4>${img.caption}</h4>
+                        </div>
+                    </div>
+                `;
+            });
+            masonryContainer.innerHTML = html;
+        };
+
+        renderGallery('all');
+
+        // Filter Buttons
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                renderGallery(e.target.getAttribute('data-filter'));
+            });
+        });
+    }
+});
+
+// Standalone lightbox opener for mixed masonry grid
+window.openStandaloneLightbox = function(src, caption) {
+    currentGallery = [{ src: src, caption: caption }];
+    currentIndex = 0;
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightbox = document.getElementById('lightbox');
+    
+    if (lightboxImg && lightboxCaption && lightbox) {
+        lightboxImg.src = src;
+        lightboxCaption.textContent = caption;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        const lightboxPrev = document.querySelector('.lightbox-prev');
+        const lightboxNext = document.querySelector('.lightbox-next');
+        if (lightboxPrev) lightboxPrev.style.display = 'none';
+        if (lightboxNext) lightboxNext.style.display = 'none';
+    }
+};
+

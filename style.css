@@ -1330,3 +1330,131 @@ h5 {
         height: 250px;
     }
 }
+
+/* --- NEW PAGE SPECIFIC CSS --- */
+.page-hero {
+    height: 60vh;
+    min-height: 400px;
+    background: url('./assets/images/room_after.png') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    /* Offset for header */
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 54, 34, 0.7);
+    z-index: 1;
+}
+
+.page-hero .hero-content {
+    z-index: 2;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 1px solid var(--gold);
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: var(--transition);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--gold);
+    color: #fff;
+}
+
+.masonry-grid {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .masonry-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .masonry-grid {
+        column-count: 1;
+    }
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.masonry-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+    background: #f1f1f1;
+}
+
+.masonry-item:hover img {
+    transform: scale(1.05);
+}
+
+.masonry-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(10, 54, 34, 0.9), transparent);
+    color: #fff;
+    transition: bottom 0.4s ease;
+}
+
+.masonry-item:hover .masonry-overlay {
+    bottom: 0;
+}
+
+.masonry-overlay h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Service Details List */
+.service-detail-row {
+    margin-bottom: 40px;
+}
+
+.mini-gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.mini-gallery-container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}

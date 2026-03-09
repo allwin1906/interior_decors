@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Sr. Muthukumar Interior Decorators</title>
+    <meta name="description"
+        content="Professional interior decorators providing modular kitchen design, wardrobe installation, false ceiling work, aluminium partitions and home renovation services across Trichy, Karur and Erode.">
+    <meta name="keywords"
+        content="interior designers in trichy, modular kitchen in trichy, interior decorators in karur, wardrobe design in karur, false ceiling contractors in erode, home interior designers in trichy, best interior designers near karur, kitchen interior work in erode, modular kitchen near me, interior contractors trichy karur erode, custom wardrobe designers tamil nadu">
+
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Sr. Muthukumar Interior Decorators | Interior Designers">
+    <meta property="og:description"
+        content="Professional interior decorators providing custom modular kitchens and premium home interiors in Trichy,  Karur, Erode and nearby areas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.srimuthumariinteriors.com/">
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Sr. Muthukumar Interior Decorators",
+      "image": "https://www.srimuthumariinteriors.com/assets/images/hero_kitchen.png",
+      "@id": "",
+      "url": "https://www.srimuthumariinteriors.com/",
+      "telephone": "+917373716767",
+      "email": "mmadhaavan018@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "43, Parishalthurai Rd",
+        "addressLocality": "Kulithalai",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "639104",
+        "addressCountry": "IN"
+      },
+      "areaServed": [
+        "Trichy",
+        "Karur",
+        "Erode",
+        "Namakkal",
+        "Salem"
+      ]
+    }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h2 class="loader-logo">Sr. Muthukumar <span>Interiors</span></h2>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="myBar"></div>
+    </div>
+
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">Sr. Muthukumar <span>Interior Decorators</span></a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:+917373716767" class="btn btn-outline nav-btn">Call Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container" style="text-align:center;">
+            <h1 class="hero-title" style="font-size: 3rem;">Our Premium <br><span>Interior Services</span></h1>
+            <p class="hero-subtitle">Comprehensive solutions tailored to your lifestyle</p>
+        </div>
+    </section>
+
+
+    <section class="services-detailed section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="sub-title">Detailed Offerings</span>
+                <h2 class="section-title">What We Specialize In</h2>
+                <p>We provide full-scale interior solutions with premium materials and flawless execution.</p>
+            </div>
+            
+            <div class="services-list" style="display:flex; flex-direction:column; gap:40px;">
+                
+        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+            <div class="service-detail-text" style="flex:1; min-width:300px;">
+                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Modular Kitchen</h3>
+                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Customized modular kitchens combining functionality with modern aesthetics. We use high-quality materials, water-resistant plywood, and soft-close hinges.</p>
+                <button class="btn btn-outline" onclick="openServiceGallery('modular-kitchen')">View Modular Kitchen Projects</button>
+            </div>
+            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                <div class="mini-gallery-container" id="preview-modular-kitchen"></div>
+            </div>
+        </div>
+    
+        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+            <div class="service-detail-text" style="flex:1; min-width:300px;">
+                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Wardrobe Designs</h3>
+                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Elegant and space-saving wardrobe solutions for your bedrooms. Sliding doors, openable units, and walk-in closets tailored to your space.</p>
+                <button class="btn btn-outline" onclick="openServiceGallery('wardrobes')">View Wardrobe Designs Projects</button>
+            </div>
+            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                <div class="mini-gallery-container" id="preview-wardrobes"></div>
+            </div>
+        </div>
+    
+        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+            <div class="service-detail-text" style="flex:1; min-width:300px;">
+                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">False Ceiling Designs</h3>
+                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Luxurious false ceilings with premium hidden LED lighting setups. Gypsum board and POP designs for living rooms and bedrooms.</p>
+                <button class="btn btn-outline" onclick="openServiceGallery('false-ceiling')">View False Ceiling Designs Projects</button>
+            </div>
+            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                <div class="mini-gallery-container" id="preview-false-ceiling"></div>
+            </div>
+        </div>
+    
+        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+            <div class="service-detail-text" style="flex:1; min-width:300px;">
+                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Aluminium Partition</h3>
+                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Sleek aluminium and glass partitions for homes and offices. Soundproof and visually expanding solutions.</p>
+                <button class="btn btn-outline" onclick="openServiceGallery('aluminium-partition')">View Aluminium Partition Projects</button>
+            </div>
+            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                <div class="mini-gallery-container" id="preview-aluminium-partition"></div>
+            </div>
+        </div>
+    
+        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+            <div class="service-detail-text" style="flex:1; min-width:300px;">
+                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Electrical & Plumbing</h3>
+                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Complete wiring, lighting, and plumbing integration for interiors. Safe, hidden, and efficient layouts.</p>
+                <button class="btn btn-outline" onclick="openServiceGallery('electrical-plumbing')">View Electrical & Plumbing Projects</button>
+            </div>
+            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                <div class="mini-gallery-container" id="preview-electrical-plumbing"></div>
+            </div>
+        </div>
+    
+        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+            <div class="service-detail-text" style="flex:1; min-width:300px;">
+                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Elevation M.S Work</h3>
+                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Exterior elevation using mild steel structural fabrication. Enhancing the facade of your building.</p>
+                <button class="btn btn-outline" onclick="openServiceGallery('elevation-ms')">View Elevation M.S Work Projects</button>
+            </div>
+            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                <div class="mini-gallery-container" id="preview-elevation-ms"></div>
+            </div>
+        </div>
+    
+        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+            <div class="service-detail-text" style="flex:1; min-width:300px;">
+                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Korean Tile Top</h3>
+                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Durable and stylish Korean tile tops for kitchen counters. Seamless, modern, and highly resilient surfaces.</p>
+                <button class="btn btn-outline" onclick="openServiceGallery('korean-tile')">View Korean Tile Top Projects</button>
+            </div>
+            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                <div class="mini-gallery-container" id="preview-korean-tile"></div>
+            </div>
+        </div>
+    
+        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+            <div class="service-detail-text" style="flex:1; min-width:300px;">
+                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">PVC & UPVC Work</h3>
+                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Quality PVC doors and UPVC windows for better insulation and design. Weather-proof and low maintenance.</p>
+                <button class="btn btn-outline" onclick="openServiceGallery('pvc-upvc')">View PVC & UPVC Work Projects</button>
+            </div>
+            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                <div class="mini-gallery-container" id="preview-pvc-upvc"></div>
+            </div>
+        </div>
+    
+        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+            <div class="service-detail-text" style="flex:1; min-width:300px;">
+                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Wooden Hand Rails</h3>
+                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Beautifully crafted wooden handrails for staircases and balconies. Polished finishes that add warmth and safety.</p>
+                <button class="btn btn-outline" onclick="openServiceGallery('wooden-handrails')">View Wooden Hand Rails Projects</button>
+            </div>
+            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                <div class="mini-gallery-container" id="preview-wooden-handrails"></div>
+            </div>
+        </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal for Services (copied from index) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-container">
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="lightbox-caption"></div>
+            <button class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+
+    <!-- Popular Searches -->
+    <section class="seo-searches section bg-darker">
+        <div class="container text-center reveal">
+            <span class="sub-title" style="color:#C5A059; letter-spacing: 2px;">POPULAR INTERIOR DESIGN SEARCHES IN TRICHY</span>
+            <div class="seo-keywords-container">
+                <a href="#" class="seo-keyword">Interior Designers Trichy</a>
+                <a href="#" class="seo-keyword">Modular Kitchen Trichy</a>
+                <a href="#" class="seo-keyword">Interior Decorators Karur</a>
+                <a href="#" class="seo-keyword">Wardrobe Design Karur</a>
+                <a href="#" class="seo-keyword">False Ceiling Contractors Erode</a>
+                <a href="#" class="seo-keyword">Home Interior Designers Trichy</a>
+                <a href="#" class="seo-keyword">Kitchen Interior Work Karur</a>
+                <a href="#" class="seo-keyword">Interior Renovation Erode</a>
+                <a href="#" class="seo-keyword">Modular Kitchen Near Me</a>
+                <a href="#" class="seo-keyword">Interior Contractors Tamil Nadu</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center"
+            style="margin-bottom: 50px; padding-bottom: 40px; border-bottom: 1px solid rgba(197, 160, 89, 0.2);">
+            <h2 style="color: var(--gold); font-size: 2.2rem; margin-bottom: 15px;">Ready to Transform Your Home?</h2>
+            <p style="color: var(--white); font-size: 1.2rem; max-width: 600px; margin: 0 auto 25px;">
+                ⭐ 5.0 Rated in Kulithalai & Trichy | 300+ Projects Completed<br>
+                <strong>Book a Free Consultation and get your personalized interior design quote today!</strong>
+            </p>
+            <a href="contact.html" class="btn btn-primary">Get Your Free Quote</a>
+            <a href="https://wa.me/917373716767?text=Hello,%20I%20want%20to%20get%20a%20free%20quote%20for%20my%20interior%20project."
+                target="_blank" class="btn btn-whatsapp" style="margin-left: 15px;"><i class="fab fa-whatsapp"></i> Chat
+                with Us</a>
+        </div>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3 class="footer-logo">Sr. Muthukumar <span>Interiors</span></h3>
+                <p>Creating elegant, functional, and modern spaces tailored to your lifestyle. Quality craftsmanship you
+                    can trust.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="gallery.html">Portfolio Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Modular Kitchen</li>
+                    <li>Wardrobe Designs</li>
+                    <li>False Ceiling</li>
+                    <li>Partition Works</li>
+                    <li>Aluminium & UPVC</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sr. Muthukumar Interior Decorators. All Rights Reserved. <br><span
+                    style="font-size: 0.9em; margin-top: 10px; display: inline-block;">Crafted with passion in Trichy |
+                    Website by <a href="https://share.google/gC2dbpVylyHmlo998" target="_blank"
+                        style="color: var(--gold); text-decoration: underline;">Javia Ventures</a></span></p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/917373716767?text=Hello,%20I%20am%20interested%20in%20interior%20design%20services."
+        class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -729,7 +729,7 @@ h5 {
     display: flex;
     width: max-content;
     gap: 30px;
-    animation: marqueeScroll 35s linear infinite;
+    animation: marqueeScroll 120s linear infinite;
 }
 
 .gallery-marquee:hover .gallery-marquee-track {
@@ -751,7 +751,6 @@ h5 {
     border-radius: 12px;
     overflow: hidden;
     height: 350px;
-    min-width: 280px;
     flex-shrink: 0;
     scroll-snap-align: center;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -760,13 +759,12 @@ h5 {
 
 @media (min-width: 768px) {
     .gallery-item {
-        min-width: 350px;
         height: 400px;
     }
 }
 
 .gallery-item img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;

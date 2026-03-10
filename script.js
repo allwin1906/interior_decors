@@ -555,3 +555,29 @@ window.openStandaloneLightbox = function (src, caption) {
     }
 };
 
+// FAQ Accordion
+document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                // Close all items
+                faqItems.forEach(faq => {
+                    faq.classList.remove('active');
+                    const answer = faq.querySelector('.faq-answer');
+                    if (answer) answer.style.maxHeight = null;
+                });
+
+                // If it wasn't active, open it
+                if (!isActive) {
+                    item.classList.add('active');
+                    const answer = item.querySelector('.faq-answer');
+                    if (answer) answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        }
+    });
+});

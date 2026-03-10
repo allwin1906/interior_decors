@@ -1127,6 +1127,69 @@ h5 {
     color: #FFF;
 }
 
+/* FAQ Section */
+.faq-container {
+    margin-top: 30px;
+}
+
+.faq-item {
+    background: var(--white);
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: var(--transition);
+}
+
+.faq-question {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: var(--white);
+    transition: var(--transition);
+}
+
+.faq-question h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+.faq-question i {
+    color: var(--gold);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question {
+    background: #fcfcfc;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    background: #fcfcfc;
+}
+
+.faq-item.active .faq-answer {
+    padding-bottom: 5px;
+}
+
+.faq-answer p {
+    padding: 0 25px 20px 25px;
+    margin: 0;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
 /* Animations using GSAP and ScrollTrigger instead of pure CSS for reveal to allow better control */
 
 /* Keyframe animations for hero */

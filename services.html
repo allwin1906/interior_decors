@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,6 +55,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Preloader -->
@@ -104,117 +106,168 @@
                 <h2 class="section-title">What We Specialize In</h2>
                 <p>We provide full-scale interior solutions with premium materials and flawless execution.</p>
             </div>
-            
+
             <div class="services-list" style="display:flex; flex-direction:column; gap:40px;">
-                
-        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
-            <div class="service-detail-text" style="flex:1; min-width:300px;">
-                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Modular Kitchen</h3>
-                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Customized modular kitchens combining functionality with modern aesthetics. We use high-quality materials, water-resistant plywood, and soft-close hinges.</p>
-                <button class="btn btn-outline" onclick="openServiceGallery('modular-kitchen')">View Modular Kitchen Projects</button>
-            </div>
-            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
-                <div class="mini-gallery-container" id="preview-modular-kitchen"></div>
-            </div>
-        </div>
-    
-        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
-            <div class="service-detail-text" style="flex:1; min-width:300px;">
-                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Wardrobe Designs</h3>
-                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Elegant and space-saving wardrobe solutions for your bedrooms. Sliding doors, openable units, and walk-in closets tailored to your space.</p>
-                <button class="btn btn-outline" onclick="openServiceGallery('wardrobes')">View Wardrobe Designs Projects</button>
-            </div>
-            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
-                <div class="mini-gallery-container" id="preview-wardrobes"></div>
-            </div>
-        </div>
-    
-        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
-            <div class="service-detail-text" style="flex:1; min-width:300px;">
-                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">False Ceiling Designs</h3>
-                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Luxurious false ceilings with premium hidden LED lighting setups. Gypsum board and POP designs for living rooms and bedrooms.</p>
-                <button class="btn btn-outline" onclick="openServiceGallery('false-ceiling')">View False Ceiling Designs Projects</button>
-            </div>
-            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
-                <div class="mini-gallery-container" id="preview-false-ceiling"></div>
-            </div>
-        </div>
-    
-        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
-            <div class="service-detail-text" style="flex:1; min-width:300px;">
-                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Aluminium Partition</h3>
-                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Sleek aluminium and glass partitions for homes and offices. Soundproof and visually expanding solutions.</p>
-                <button class="btn btn-outline" onclick="openServiceGallery('aluminium-partition')">View Aluminium Partition Projects</button>
-            </div>
-            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
-                <div class="mini-gallery-container" id="preview-aluminium-partition"></div>
-            </div>
-        </div>
-    
-        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
-            <div class="service-detail-text" style="flex:1; min-width:300px;">
-                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Electrical & Plumbing</h3>
-                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Complete wiring, lighting, and plumbing integration for interiors. Safe, hidden, and efficient layouts.</p>
-                <button class="btn btn-outline" onclick="openServiceGallery('electrical-plumbing')">View Electrical & Plumbing Projects</button>
-            </div>
-            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
-                <div class="mini-gallery-container" id="preview-electrical-plumbing"></div>
-            </div>
-        </div>
-    
-        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
-            <div class="service-detail-text" style="flex:1; min-width:300px;">
-                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Elevation M.S Work</h3>
-                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Exterior elevation using mild steel structural fabrication. Enhancing the facade of your building.</p>
-                <button class="btn btn-outline" onclick="openServiceGallery('elevation-ms')">View Elevation M.S Work Projects</button>
-            </div>
-            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
-                <div class="mini-gallery-container" id="preview-elevation-ms"></div>
-            </div>
-        </div>
-    
-        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
-            <div class="service-detail-text" style="flex:1; min-width:300px;">
-                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Korean Tile Top</h3>
-                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Durable and stylish Korean tile tops for kitchen counters. Seamless, modern, and highly resilient surfaces.</p>
-                <button class="btn btn-outline" onclick="openServiceGallery('korean-tile')">View Korean Tile Top Projects</button>
-            </div>
-            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
-                <div class="mini-gallery-container" id="preview-korean-tile"></div>
-            </div>
-        </div>
-    
-        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
-            <div class="service-detail-text" style="flex:1; min-width:300px;">
-                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">PVC & UPVC Work</h3>
-                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Quality PVC doors and UPVC windows for better insulation and design. Weather-proof and low maintenance.</p>
-                <button class="btn btn-outline" onclick="openServiceGallery('pvc-upvc')">View PVC & UPVC Work Projects</button>
-            </div>
-            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
-                <div class="mini-gallery-container" id="preview-pvc-upvc"></div>
-            </div>
-        </div>
-    
-        <div class="service-detail-row reveal" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
-            <div class="service-detail-text" style="flex:1; min-width:300px;">
-                <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Wooden Hand Rails</h3>
-                <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Beautifully crafted wooden handrails for staircases and balconies. Polished finishes that add warmth and safety.</p>
-                <button class="btn btn-outline" onclick="openServiceGallery('wooden-handrails')">View Wooden Hand Rails Projects</button>
-            </div>
-            <div class="service-detail-images" style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
-                <div class="mini-gallery-container" id="preview-wooden-handrails"></div>
-            </div>
-        </div>
-    
+
+                <div class="service-detail-row reveal" id="modular-kitchen"
+                    style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+                    <div class="service-detail-text" style="flex:1; min-width:300px;">
+                        <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Modular Kitchen</h3>
+                        <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+                            Customized modular kitchens combining functionality with modern aesthetics. We use
+                            high-quality materials, water-resistant plywood, and soft-close hinges.</p>
+                        <button class="btn btn-outline" onclick="openServiceGallery('modular-kitchen')">View Modular
+                            Kitchen Projects</button>
+                    </div>
+                    <div class="service-detail-images"
+                        style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                        <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                        <div class="mini-gallery-container" id="preview-modular-kitchen"></div>
+                    </div>
+                </div>
+
+                <div class="service-detail-row reveal" id="wardrobes"
+                    style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+                    <div class="service-detail-text" style="flex:1; min-width:300px;">
+                        <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Wardrobe Designs
+                        </h3>
+                        <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+                            Elegant and space-saving wardrobe solutions for your bedrooms. Sliding doors, openable
+                            units, and walk-in closets tailored to your space.</p>
+                        <button class="btn btn-outline" onclick="openServiceGallery('wardrobes')">View Wardrobe Designs
+                            Projects</button>
+                    </div>
+                    <div class="service-detail-images"
+                        style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                        <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                        <div class="mini-gallery-container" id="preview-wardrobes"></div>
+                    </div>
+                </div>
+
+                <div class="service-detail-row reveal" id="false-ceiling"
+                    style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+                    <div class="service-detail-text" style="flex:1; min-width:300px;">
+                        <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">False Ceiling
+                            Designs</h3>
+                        <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+                            Luxurious false ceilings with premium hidden LED lighting setups. Gypsum board and POP
+                            designs for living rooms and bedrooms.</p>
+                        <button class="btn btn-outline" onclick="openServiceGallery('false-ceiling')">View False Ceiling
+                            Designs Projects</button>
+                    </div>
+                    <div class="service-detail-images"
+                        style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                        <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                        <div class="mini-gallery-container" id="preview-false-ceiling"></div>
+                    </div>
+                </div>
+
+                <div class="service-detail-row reveal" id="aluminium-partition"
+                    style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+                    <div class="service-detail-text" style="flex:1; min-width:300px;">
+                        <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Aluminium Partition
+                        </h3>
+                        <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">Sleek
+                            aluminium and glass partitions for homes and offices. Soundproof and visually expanding
+                            solutions.</p>
+                        <button class="btn btn-outline" onclick="openServiceGallery('aluminium-partition')">View
+                            Aluminium Partition Projects</button>
+                    </div>
+                    <div class="service-detail-images"
+                        style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                        <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                        <div class="mini-gallery-container" id="preview-aluminium-partition"></div>
+                    </div>
+                </div>
+
+                <div class="service-detail-row reveal" id="electrical-plumbing"
+                    style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+                    <div class="service-detail-text" style="flex:1; min-width:300px;">
+                        <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Electrical &
+                            Plumbing</h3>
+                        <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+                            Complete wiring, lighting, and plumbing integration for interiors. Safe, hidden, and
+                            efficient layouts.</p>
+                        <button class="btn btn-outline" onclick="openServiceGallery('electrical-plumbing')">View
+                            Electrical & Plumbing Projects</button>
+                    </div>
+                    <div class="service-detail-images"
+                        style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                        <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                        <div class="mini-gallery-container" id="preview-electrical-plumbing"></div>
+                    </div>
+                </div>
+
+                <div class="service-detail-row reveal" id="elevation-ms"
+                    style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+                    <div class="service-detail-text" style="flex:1; min-width:300px;">
+                        <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Elevation M.S Work
+                        </h3>
+                        <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+                            Exterior elevation using mild steel structural fabrication. Enhancing the facade of your
+                            building.</p>
+                        <button class="btn btn-outline" onclick="openServiceGallery('elevation-ms')">View Elevation M.S
+                            Work Projects</button>
+                    </div>
+                    <div class="service-detail-images"
+                        style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                        <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                        <div class="mini-gallery-container" id="preview-elevation-ms"></div>
+                    </div>
+                </div>
+
+                <div class="service-detail-row reveal" id="korean-tile"
+                    style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+                    <div class="service-detail-text" style="flex:1; min-width:300px;">
+                        <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Korean Tile Top</h3>
+                        <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+                            Durable and stylish Korean tile tops for kitchen counters. Seamless, modern, and highly
+                            resilient surfaces.</p>
+                        <button class="btn btn-outline" onclick="openServiceGallery('korean-tile')">View Korean Tile Top
+                            Projects</button>
+                    </div>
+                    <div class="service-detail-images"
+                        style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                        <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                        <div class="mini-gallery-container" id="preview-korean-tile"></div>
+                    </div>
+                </div>
+
+                <div class="service-detail-row reveal" id="pvc-upvc"
+                    style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+                    <div class="service-detail-text" style="flex:1; min-width:300px;">
+                        <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">PVC & UPVC Work</h3>
+                        <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+                            Quality PVC doors and UPVC windows for better insulation and design. Weather-proof and low
+                            maintenance.</p>
+                        <button class="btn btn-outline" onclick="openServiceGallery('pvc-upvc')">View PVC & UPVC Work
+                            Projects</button>
+                    </div>
+                    <div class="service-detail-images"
+                        style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                        <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                        <div class="mini-gallery-container" id="preview-pvc-upvc"></div>
+                    </div>
+                </div>
+
+                <div class="service-detail-row reveal" id="wooden-handrails"
+                    style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; background:#f9f9f9; padding:30px; border-radius:10px;">
+                    <div class="service-detail-text" style="flex:1; min-width:300px;">
+                        <h3 style="color:var(--primary-color); font-size:2rem; margin-bottom:15px;">Wooden Hand Rails
+                        </h3>
+                        <p style="color:var(--text-light); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+                            Beautifully crafted wooden handrails for staircases and balconies. Polished finishes that
+                            add warmth and safety.</p>
+                        <button class="btn btn-outline" onclick="openServiceGallery('wooden-handrails')">View Wooden
+                            Hand Rails Projects</button>
+                    </div>
+                    <div class="service-detail-images"
+                        style="flex:1; min-width:300px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                        <!-- We'll use JS to insert the first 4 images as preview, and button opens full lightbox -->
+                        <div class="mini-gallery-container" id="preview-wooden-handrails"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -234,7 +287,8 @@
     <!-- Popular Searches -->
     <section class="seo-searches section bg-darker">
         <div class="container text-center reveal">
-            <span class="sub-title" style="color:#C5A059; letter-spacing: 2px;">POPULAR INTERIOR DESIGN SEARCHES IN TRICHY</span>
+            <span class="sub-title" style="color:#C5A059; letter-spacing: 2px;">POPULAR INTERIOR DESIGN SEARCHES IN
+                TRICHY</span>
             <div class="seo-keywords-container">
                 <a href="#" class="seo-keyword">Interior Designers Trichy</a>
                 <a href="#" class="seo-keyword">Modular Kitchen Trichy</a>
@@ -270,11 +324,7 @@
                 <h3 class="footer-logo">Sri Muthumari <span>Interiors</span></h3>
                 <p>Creating elegant, functional, and modern spaces tailored to your lifestyle. Quality craftsmanship you
                     can trust.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
+
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
@@ -289,11 +339,11 @@
             <div class="footer-col">
                 <h4>Our Services</h4>
                 <ul>
-                    <li>Modular Kitchen</li>
-                    <li>Wardrobe Designs</li>
-                    <li>False Ceiling</li>
-                    <li>Partition Works</li>
-                    <li>Aluminium & UPVC</li>
+                    <li><a href="services.html#modular-kitchen">Modular Kitchen</a></li>
+                    <li><a href="services.html#wardrobes">Wardrobe Designs</a></li>
+                    <li><a href="services.html#false-ceiling">False Ceiling</a></li>
+                    <li><a href="services.html#aluminium-partition">Partition Works</a></li>
+                    <li><a href="services.html#pvc-upvc">Aluminium & UPVC</a></li>
                 </ul>
             </div>
         </div>
@@ -323,4 +373,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
